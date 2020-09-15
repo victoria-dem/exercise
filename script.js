@@ -242,19 +242,23 @@ function intersection(arr1, arr2) {
 // console.log(intersection([1, 5, 4, 2], [7, 12])); // []
 
 function countZeros(n) {
-  let count = 0;
-  for (let i = 1; i <= n; i++) {
-    const string = i.toString();
-    if (string.includes("0")) {
-      count++;
-    }
-  }
-  return count;
+   let arrayStr = [];
+   for (let i = 1; i <= n; i++) {
+     arrayStr.push(i.toString());
+   }
+  return zeros = arrayStr.reduce((accumulator, currentValue) => {
+     const isZeros = currentValue.match(/0/g);
+    if (isZeros !== null) {
+       return (accumulator + isZeros.length);
+     }
+     return accumulator
+  }, 0);
+
 }
 // решение без приведения к строке
 
-console.log(countZeros(20)); // 2 – два нуля, по одному в числах 10 и 20
-console.log(countZeros(200)); // 11 – 11 нулей в числах: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
+console.log(countZeros(200)); // 2 – два нуля, по одному в числах 10 и 20
+// console.log(countZeros(200)); // 11 – 11 нулей в числах: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
 
 function sumOfTwo(arr, num) {
   for (i = 0; i <= arr.length; i++) {
