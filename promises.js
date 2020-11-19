@@ -70,7 +70,6 @@ const newPromise = new Promise((resolve) => {
 // rejectOnTimeout(newPromise, 2300)  
 
 
-
 /**
  * Реализовать функцию, поведение которой аналогично поведению Promise.all,
  * которая возвращает в качестве результата rejected промис c первым reject value или resolve с массивом resolveValues,
