@@ -31,7 +31,7 @@ const instances = values.map(str => {
 const resultConcatenation = instances.join(' '); // == 'hello javascript world'
 const resultCharCount = instances.reduce((obj, memo) => memo + obj, 0); // == 20
 
-// console.log(resultConcatenation,resultCharCount)
+console.log("task 1 --",resultConcatenation,resultCharCount)
 
 
 
