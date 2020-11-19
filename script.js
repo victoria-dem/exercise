@@ -257,7 +257,7 @@ function countZeros(n) {
 }
 // решение без приведения к строке
 
-console.log(countZeros(200)); // 2 – два нуля, по одному в числах 10 и 20
+console.log(countZeros(1501)); // 2 – два нуля, по одному в числах 10 и 20
 // console.log(countZeros(200)); // 11 – 11 нулей в числах: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100
 
 function sumOfTwo(arr, num) {
@@ -301,3 +301,5 @@ function primes(n) {
 }
 // console.log(primes(6)); // [2, 3, 5]
 // console.log(primes(17)); // [2, 3, 5, 7, 11, 13, 17]
+
+
